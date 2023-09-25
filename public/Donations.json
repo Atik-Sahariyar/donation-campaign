@@ -1,0 +1,153 @@
+[
+  
+  
+  
+  
+  
+
+
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co/tXfvLrZ/Health.png",
+    "donation_img": "https://i.ibb.co/TwkdG4W/Rectangle-4284.png",
+    "title": "Clean water for children",
+    "category": "Health",
+    "category_text_color": "#0052FF",
+    "card_bg_color": "#d9e3fb",
+    "text_button_bg_color": "#b1cff6",
+    "description": "This product aims to provide clean and safe drinking water for children. It's a critical resource for ensuring their health and well-being.",
+    "price": 499.99
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co/JqnQWHt/Education.png",
+    "donation_img": "https://i.ibb.co/CMZqqFs/Rectangle-4287-1.png",
+    "title": "Good education",
+    "category": "Education",
+    "category_text_color": "#FF444A",
+    "card_bg_color": "#f8d0d1",
+    "text_button_bg_color": "#fcbabd",
+    "description": "Products in the education category are likely aimed at enhancing learning or providing educational resources. This could encompass online courses, books, or educational tools.",
+    "price": 59.99
+  },
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co/5BXggv0/Clothing.png",
+    "donation_img": "https://i.ibb.co/HBKvTg4/Rectangle-4287.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_text_color": "#79C23F",
+    "card_bg_color": "#dff8ca",
+    "text_button_bg_color": "#d4f8ab",
+    "description": "This category is associated with clothing-related products. It may involve clothing items, fashion accessories, or initiatives like clothing drives.",
+    "price": 129.99
+  },
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co/XDB9dvz/Food.png",
+    "donation_img": "https://i.ibb.co/SJcDKrm/Rectangle-4287-2.png",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "category_text_color": "#F87147",
+    "card_bg_color": "#fcece8",
+    "text_button_bg_color": "#f9ccc0",
+    "description": " Products in the food category may relate to food and beverages. They could include gourmet food items, food drive initiatives, or projects to improve food accessibility.",
+    "price": 24.99
+  },
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co/XDB9dvz/Food.png",
+    "donation_img": "https://i.ibb.co/SJcDKrm/Rectangle-4287-2.png",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "category_text_color": "#F87147",
+    "card_bg_color": "#fcece8",
+    "text_button_bg_color": "#f9ccc0",
+    "description": "Similar to the previous product, this one also falls under the food category and may offer different food-related products or initiatives.",
+    "price": 14.99
+  },
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co/5BXggv0/Clothing.png",
+    "donation_img": "https://i.ibb.co/HBKvTg4/Rectangle-4287.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_text_color": "#79C23F",
+    "card_bg_color": "#dff8ca",
+    "text_button_bg_color": "#d4f8ab",
+    "description": "In this case, the clothing category may focus on outdoor clothing and gear, catering to outdoor enthusiasts and adventurers.",
+    "price": 199.99
+  },
+  {
+    "id": 7,
+    "picture": "https://i.ibb.co/JqnQWHt/Education.png",
+    "donation_img": "https://i.ibb.co/CMZqqFs/Rectangle-4287-1.png",
+    "title": "Good education",
+    "category": "Education",
+    "category_text_color": "#FF444A",
+    "card_bg_color": "#f8d0d1",
+    "text_button_bg_color": "#fcbabd",
+    "description": "This product category has shifted to personal care and beauty products, offering items or resources to enhance personal care routines.",
+    "price": 49.99
+  },
+  {
+    "id": 8,
+    "picture": "https://i.ibb.co/tXfvLrZ/Health.png",
+    "donation_img": "https://i.ibb.co/TwkdG4W/Rectangle-4284.png",
+    "title": "Clean water for children",
+    "category": "Health",
+    "category_text_color": "#0052FF",
+    "card_bg_color": "#d9e3fb",
+    "text_button_bg_color": "#b1cff6",
+    "description": "This time, the health category appears to have transitioned to automotive accessories, possibly offering products to enhance the functionality and appearance of vehicles.",
+    "price": 79.99
+  },
+  {
+    "id": 9,
+    "picture": "https://i.ibb.co/tXfvLrZ/Health.png",
+    "donation_img": "https://i.ibb.co/TwkdG4W/Rectangle-4284.png",
+    "title": "Clean water for children",
+    "category": "Health",
+    "category_text_color": "#0052FF",
+    "card_bg_color": "#d9e3fb",
+    "text_button_bg_color": "#b1cff6",
+    "description": "In this instance, the health category has transitioned to health and wellness products, which may include a variety of items aimed at improving overall well-being.",
+    "price": 39.99
+  },
+  {
+    "id": 10,
+    "picture": "https://i.ibb.co/JqnQWHt/Education.png",
+    "donation_img": "https://i.ibb.co/CMZqqFs/Rectangle-4287-1.png",
+    "title": "Good education",
+    "category": "Education",
+    "category_text_color": "#FF444A",
+    "card_bg_color": "#f8d0d1",
+    "text_button_bg_color": "#fcbabd",
+    "description": "This educational product category is now related to gourmet food and beverages, possibly offering courses or gourmet food products.",
+    "price": 29.99
+  },
+  {
+    "id": 11,
+    "picture": "https://i.ibb.co/5BXggv0/Clothing.png",
+    "donation_img": "https://i.ibb.co/HBKvTg4/Rectangle-4287.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_text_color": "#79C23F",
+    "card_bg_color": "#dff8ca",
+    "text_button_bg_color": "#d4f8ab",
+    "description": "This product category now focuses on elegant and comfortable furniture for homes, possibly sourced from used items or designed with sustainability in mind.",
+    "price": 299.99
+  },
+  {
+    "id": 12,
+    "picture": "https://i.ibb.co/XDB9dvz/Food.png",
+    "donation_img": "https://i.ibb.co/SJcDKrm/Rectangle-4287-2.png",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "category_text_color": "#F87147",
+    "card_bg_color": "#fcece8",
+    "text_button_bg_color": "#f9ccc0",
+    "description": "This product category has shifted to cutting-edge electronic gadgets, catering to tech enthusiasts with the latest technology.",
+    "price": 799.99
+  }
+]

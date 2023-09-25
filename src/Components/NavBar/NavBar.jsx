@@ -2,12 +2,13 @@ import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 
 const NavBar = () => {
-    return (
-        <div className="">
-            <nav className="flex justify-between items-center py-4  px-6">
-                <Logo></Logo>
 
-                <ul className="flex gap-5">
+    return (
+        <div className=" ">
+            <nav className="">
+              <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center py-4  px-6 gap-4">
+               <Logo></Logo>
+                <ul className="flex gap-5 ">
                     <li>
                         <NavLink
                             to="/"
@@ -21,7 +22,7 @@ const NavBar = () => {
 
                     <li>
                         <NavLink
-                            to="/donation"
+                            to="/donations"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "text-red-custom underline text-xl" : "text-xl"
                             }
@@ -40,9 +41,12 @@ const NavBar = () => {
                         </NavLink>
                     </li>
                 </ul>
-
+              
+              </div>
             </nav>
+         
         </div>
+
     );
 };
 
