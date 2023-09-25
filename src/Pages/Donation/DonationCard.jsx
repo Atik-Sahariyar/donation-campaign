@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import Swal from 'sweetalert2';
 
 
 const DonationCard = ({ donation }) => {
     const {  picture,  category, title } = donation || {};
     console.log(donation);
-  
-
-  
+    const handleAddDonations = () =>{
+        localStorage.setItem('donations', JSON.stringify(donation))
+    }
+    
     return (
-        <div onClick={handleAddToDonations}>
+        <div >
             <div className="flex justify-center items-center h-[80vh]">
                 <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">

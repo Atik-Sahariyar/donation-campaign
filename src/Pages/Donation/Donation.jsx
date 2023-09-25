@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import DonationCard from "../../Components/Donations/DonationsCard";
+import DonationCard from "../../Pages/Donation/DonationCard";
 
 const Donation = () => {
     const [donation, setDonation] = useState([]);
