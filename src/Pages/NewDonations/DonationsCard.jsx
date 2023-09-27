@@ -13,16 +13,16 @@ const DonationsCard = ({ donation }) => {
 
     return (
         <div className={`m-2 relative  flex flex-col rounded  `} style={cardBg}>
-            <div className="flex gap-2 relative   overflow-hidden rounded ">
+            <div className="flex gap-2 relative  overflow-hidden rounded ">
                 <div>
-                <img src={donation_img} alt="profile-picture" className='md:h-[208px]' />
+                <img src={donation_img} alt="profile-picture" className=' h-[163px]  md:max-h-[208px]  lg:h-[220px] w-[180px] md:max-w-[220px] lg:w-[242px]' />
                 </div>
                 <div className={` ml-4 p-2 lg:mt-3`}>
                     <button className={` px-3 py-1 rounded-md `} style={categoryTextbg}>{category}</button>
-                    <h2 className='text-2xl mt-2'>{title}</h2>
+                    <h2 className='text-xl lg:text-2xl mt-2'>{title}</h2>
                     <p className={`my-2`} style={textColor}>${price}</p>
                     <NavLink to = {`/donation/${id}`} >
-                    <button  className={`mt-1 py-1 px-2 rounded-md  text-white`} style={buttonBgColor}>  
+                    <button  className={`  mt-1 py-1 px-2 rounded-md  text-white`} style={buttonBgColor}>  
                             View Details 
                     </button>
                     </NavLink>

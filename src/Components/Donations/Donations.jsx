@@ -7,7 +7,7 @@ const Donations = ({donations}) => {
         <div className='py-10 flex justify-center items-center'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-3 py-10 mx-2'>
             {
-                donations?.map(donation=><DonationsCard key={donation.id} donation={donation}></DonationsCard> )
+                donations?.map(donation=><DonationsCard key={donation.id} donation={donation} ></DonationsCard> )
             }
         </div>
     </div>
@@ -15,7 +15,8 @@ const Donations = ({donations}) => {
 };
 
 Donations.propTypes = {
-    donations: PropTypes.array
+    donations: PropTypes.array,
+    findDonation: PropTypes.object
 }
 
 export default Donations;

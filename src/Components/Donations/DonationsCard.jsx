@@ -13,7 +13,6 @@ const DonationsCard = ({ donation }) => {
     
     const handleAddToDonation = () => {
         const addedDonationArray = [];
-    
         const donationItems = JSON.parse(localStorage.getItem("donations"));
         
        
@@ -67,7 +66,7 @@ const DonationsCard = ({ donation }) => {
     return (
         <div onClick={handleAddToDonation}  className={`relative   w-[312px] flex flex-col rounded `} style={cardBg}>
             <div className="relative h-72 overflow-hidden rounded ">
-                <img src={picture} alt="profile-picture" />
+                <img src={picture} alt="profile-picture"  className='w-[100%] h-[67.37%]'/>
                 <div className={`text- ml-4 mt-3`} style={textColor}>
                     <button className={`px-3 py-1 rounded-md `} style={buttonBgColor}>{category}</button>
                     <h2 className={`text-2xl `} style={textColor}>{title}</h2>

@@ -30,8 +30,8 @@ const Statistics = () => {
   
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        'Total Donations',
-        'Your Donations',
+        'Your Donations %',
+        'Remainig Donations %',
         
     ]
   }; 
