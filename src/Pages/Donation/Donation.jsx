@@ -3,21 +3,33 @@ import { useLoaderData, useParams } from "react-router-dom";
 import DonationCard from "../../Pages/Donation/DonationCard";
 
 const Donation = () => {
-    const [donation, setDonation] = useState([]);
+    const [donation, setDonation] = useState(null);
     const { id } = useParams();
+    const intId = parseInt(id)
 
     const donations = useLoaderData()
-  
-    useEffect(() =>{
-        const findDonation = donations?.find((donation) => donation.id === id);
+
+    useEffect(() => {
+        const findDonation = donations?.find((item) => item.id === intId);
         console.log(findDonation);
         setDonation(findDonation);
-    },[id, donations])
-    
+    }, [intId, donations])
+
     return (
         <div>
-            <DonationCard donation={donation}></DonationCard>
-            <h3>This is Donation page</h3>
+            {
+                donation ? (
+                    <div>
+                        <DonationCard donation={donation}></DonationCard>
+                    </div>
+                ): (
+                    <div className=" flex h-[70vh] justify-center items-center">
+                        <p> No data found .....</p>
+                    </div>
+                )
+            }
+
+
         </div>
     );
 };

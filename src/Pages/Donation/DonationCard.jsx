@@ -1,30 +1,81 @@
 import PropTypes from 'prop-types';
+import Swal from 'sweetalert2';
 
 
 const DonationCard = ({ donation }) => {
-    const {  picture,  category, title } = donation || {};
-    console.log(donation);
-    const handleAddDonations = () =>{
-        localStorage.setItem('donations', JSON.stringify(donation))
+    const { id, donation_img, price, category_text_color, title, description } = donation || {};
+
+    const buttonbgColor = { backgroundColor: `${category_text_color}`};
+   
+    const handleDonate = () =>{
+
+        const addedDonatesArray = [];
+
+        const donateItems = JSON.parse(localStorage.getItem("donates"));
+
+        if (!donateItems) {
+            addedDonatesArray.push(donation);
+            localStorage.setItem("donates", JSON.stringify(addedDonatesArray));
+            Swal.fire({
+              title: ' Donation added successfully!',
+              showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+              },
+              hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+              }
+            })
+          } 
+          
+          else {
+      
+      
+            const isExits = donateItems.find((donation) => donation.id === id);
+      
+            
+            if (!isExits) {
+      
+              addedDonatesArray.push(...donateItems, donation);
+              localStorage.setItem("donates", JSON.stringify(addedDonatesArray));
+              Swal.fire({
+                title: 'Good job! Donation added successfully!',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+             
+            } else {
+              Swal.fire({
+                title: 'Error! No duplicate !',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+            }
+          }
     }
-    
+
     return (
         <div >
-            <div className="flex justify-center items-center h-[80vh]">
-                <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
-                        <img src={picture} alt="image" className="h-full w-full object-cover" />
-                    </div>
-                    <div className="p-6">
-                        <h6 className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
-                            {category}
-                        </h6>
-                        <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                            {title}
-                        </h4>
-                    </div>
-                </div>
-            </div>
+           <div className=' relative'>
+            <img src={donation_img} alt="" className=' w-[60%] mx-auto h-[60vh] rounded-lg'/>
+            <div className='ml-[20%] absolute bg-[#363636b3] w-[60%] h-[20%] bottom-0  rounded-b-lg'>
+            <button onClick={handleDonate} className={` text-white px-3 py-[6px] rounded bg-orange-600 w-auto my-[6%] mx-[5%]`} style={buttonbgColor}>
+                Donate ${price}
+            </button>
+           </div>
+           </div>
+           <div className='mx-auto  w-[60%]'>
+            <h1 className=' text-2xl font-semibold my-3'>{title}</h1>
+            <p className=' text-gray-500'>{description}</p>
+           </div>
+       
         </div>
     );
 };

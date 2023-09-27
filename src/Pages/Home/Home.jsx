@@ -4,10 +4,10 @@ import Donations from "../../Components/Donations/Donations";
 
 const Home = () => {
    const donations = useLoaderData();
-
+   console.log(donations);
     return (
         <div>
-            <Banner></Banner>
+            <Banner donations={donations}></Banner>
             <Donations donations={donations}></Donations>
         </div>
     );
